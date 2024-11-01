@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-color: #f5f0ec;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.overlay {
+
+    height: 140vh; 
+    opacity: 0.9;
+    background-image:url(png/rb_16001.png) ;
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    position: relative;
+   
+}
+.content {
+    position: relative; /* Position relative to overlay */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #acb5bc;
+    position: sticky; /*Made the navbar sticky*/
+    top: 0; /*Sticks on top*/
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+}
+.navbar a{
+    color:#f5f0ec ;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+   background-color:#f5f0ec;
+   color: black;
+   border-radius: 25px;
+}
+.img-logo{
+    margin-right: 10%;
+}
+.img-text-container{
+    display: flex;
+    align-items: center;
+    background-color: #d8bfbf;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    transform: translate(-35%, -35%);
+    border-radius: 30px;
+    z-index: 5;
+}
+.top-img{
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 10px;
+}
+/* .top-img{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+} */
+.text-content{
+    flex: 1;
+    color: #f5f0ec;
+}
+.text-content h2{
+    margin: 0;
+    font-size: 30px;
+}
+.text-content p{
+    margin-top: 10px;
+}
