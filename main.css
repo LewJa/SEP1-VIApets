@@ -15,10 +15,11 @@ body{
 }
 .navbar a{
     color:#f5f0ec ;
-    display: block;
+    display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 .navbar a:hover{
    background-color:#f5f0ec;
@@ -30,8 +31,8 @@ body{
 }
 .slider{
     position: relative;
-    max-width: 60%;
-    margin: auto;
+    max-width: 100%;
+    margin:0 auto;
     overflow: hidden;
 }
 .slides{
@@ -44,7 +45,7 @@ body{
 }
 .slide img{
     width: 100%;
-    height: auto;
+    height: 70%;
 }
 @keyframes slide{
     0%{transform: translateX(0);}
@@ -55,58 +56,41 @@ body{
     85%{transform: translateX(-200%);}
     100%{transform: translateX(0);}
 }
-.img-text-container{
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+.box{
     display: flex;
     align-items: center;
     background-color: #d8bfbf;
-    padding: 20px;
-    position: absolute;
-    top: 20%;
-    left: 38%;
-    transform: translate(-30%, -45%);
-    border-radius: 30px;
-    z-index: 5;
-}
-.top-img{
-    width: 50%;
-    max-width: 400px;
-    height: auto;
-    margin-right: 10px;
-}
-.text-content{
-    flex: 1;
-    color: #f5f0ec;
-}
-.text-content h2{
-    margin: 0;
-    font-size: 30px;
-}
-.text-content p{
-    margin-top: 10px;
-}
-.overlay {
-
-    height: 140vh; 
-    opacity: 0.9;
-    background-image:url(png/rb_16001.png) ;
-    background-size: cover;
-    background-position: top;
-    background-repeat: repeat;
-    position: relative;
-   
-}
-.content {
-    position: relative; /* Position relative to overlay */
-    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
     text-align: center;
-    padding: 20px;
-    margin-top: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
-/* .top-img{
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 600px;
-} */
+.box-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.box-text{
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+.box-text h2{
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+.box-text p{
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
