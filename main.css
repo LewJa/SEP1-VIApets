@@ -6,7 +6,7 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    background-color: #acb5bc;
+    background-color: #d9c4af;
     position: sticky; /*Made the navbar sticky*/
     top: 0; /*Sticks on top*/
     width: 100%;
@@ -45,7 +45,7 @@ body{
 }
 .slide img{
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 @keyframes slide{
     0%{transform: translateX(0);}
@@ -60,7 +60,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px; 
     margin-top: 20px;
 }
 .box{
@@ -93,4 +93,32 @@ body{
     margin: 0;
     color: #333;
     line-height: 1.6;
+}
+.photo-list{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: none;
+}
+.photo-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.photo{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+    border: 2px solid #d9c4af;
+}
+.photo-name{
+    margin-top: 8px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
 }
