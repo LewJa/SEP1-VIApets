@@ -122,3 +122,11 @@ body{
     text-align: center;
     font-weight: bold;
 }
+footer{
+    background-color: #d9c4af;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
