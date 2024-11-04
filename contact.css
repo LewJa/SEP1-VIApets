@@ -153,6 +153,7 @@ footer{
 }
 #StaffBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -166,6 +167,7 @@ footer{
     align-items: center;
     margin: 10px;
     max-width: 300px;
+    flex: 1 1 300px; /* Allow flex items to grow and shrink */
 }
 .staff-comment {
     text-align: center;
@@ -195,6 +197,11 @@ footer{
     border-radius: 10px;
 }
 #Staff{
-    display: flex;
-    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 292px;
+    height: 80px;
 }
