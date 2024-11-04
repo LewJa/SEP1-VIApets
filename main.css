@@ -35,7 +35,10 @@ body {
 .img-logo {
     margin-right: 10%;
 }
-
+.logo{
+    width: 292px;
+    height: 80px;
+}
 .slider {
     position: relative;
     max-width: 100%;
