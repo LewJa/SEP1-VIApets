@@ -1,0 +1,49 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.headings {
+    margin-bottom: 20px;
+}
+
+.square {
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#available {
+    background-color: white;
+}
+
+#occupied {
+    background-color: #acb5bc;
+}
+.kennel-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    max-width: 860px;
+}
+
+@media (max-width: 768px) {
+    .kennel-grid {
+        grid-template-columns: 150px 150px;
+    }
+}
