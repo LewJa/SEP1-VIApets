@@ -1,14 +1,17 @@
+/* General body styling */
 body{
     margin: 0;
     background-color: #f5f0ec;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* Navbar styling */
 .navbar{
     display: flex;
     align-items: center;
     background-color: #d9c4af;
-    position: sticky; /*Made the navbar sticky*/
-    top: 0; /*Sticks on top*/
+    position: sticky; /* Made the navbar sticky */
+    top: 0; /* Sticks on top */
     width: 100%;
     z-index: 10;
     padding: 10px 20px;
@@ -29,6 +32,8 @@ body{
 .img-logo{
     margin-right: 10%;
 }
+
+/* Slider styling */
 .slider{
     position: relative;
     max-width: 100%;
@@ -56,6 +61,8 @@ body{
     85%{transform: translateX(-200%);}
     100%{transform: translateX(0);}
 }
+
+/* Content styling */
 .content{
     display: flex;
     justify-content: center;
@@ -63,6 +70,8 @@ body{
     padding: 20px; 
     margin-top: 20px;
 }
+
+/* Box styling */
 .box{
     display: flex;
     align-items: center;
@@ -97,6 +106,8 @@ body{
     color: #333;
     line-height: 1.6;
 }
+
+/* Photo list styling */
 .photo-list{
     display: flex;
     justify-content: center;
@@ -125,6 +136,8 @@ body{
     text-align: center;
     font-weight: bold;
 }
+
+/* Footer styling */
 footer{
     background-color: #d9c4af;
     text-align: center;
@@ -133,6 +146,8 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+/* Contact section styling */
 .contact-bold{
     font-weight: bold;
 }
@@ -151,6 +166,8 @@ footer{
     width: 600px;
     height: 410px;
 }
+
+/* Staff section styling */
 #StaffBox{
     display: flex;
     flex-wrap: wrap;
@@ -181,13 +198,7 @@ footer{
     width: 100%;
     color: black;
 }
-.row1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.row2{
+.row1, .row2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,10 +217,6 @@ footer{
     display: flex;    
     justify-content: center;
     align-items: center;
-}
-.logo{
-    width: 292px;
-    height: 80px;
 }
 .logo{
     width: 292px;
