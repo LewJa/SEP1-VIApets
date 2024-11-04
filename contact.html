@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link href="main.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
     
 </head>
 <body>
@@ -13,62 +13,58 @@
           <div class="img-logo">
               <img class="logo" src="png/dog_2934856.png" alt="Logo">
           </div>
-          <a href="#Home">Home</a>
-          <a href="#Pet">Pet</a>
-          <a href="#Shop">Shop</a>
+          <a href="/homePage.html">Home</a>
+          <a href="#PetShop">Pet shop</a>
           <a href="#Kennel">Kennel</a>
           <a href="#Contact">Contact</a>
     </div>
-    <div class="slider">
-        <div class="slides">
-            <div class="slide">
-                <img src="png/Screenshot 2024-11-02 at 13.16.41.png" alt="Slide1">
+        <div class="content">
+            <div>
+            <iframe id="GoogleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.607815533351!2d9.835062590678222!3d55.863059082377326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c63be87e17d19%3A0xa65113d28ba174ba!2sVIA%20University%20Campus%20Horsens!5e0!3m2!1spl!2sdk!4v1730668445644!5m2!1spl!2sdk"
+             width="600" height="450" style="border:0;" allowfullscreen="f" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             </div>
-            <div class="slide">
-                <img src="png/Screenshot 2024-11-02 at 13.18.48.png" alt="Slide2">
-            </div>
-            <div class="slide">
-                <img src="png/Screenshot 2024-11-02 at 13.19.45.png" alt="Slide3">
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="box" >
-            <img class="box-img"src="png/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.png" alt="Top Image">
-            <div class="box-text">
-                <h2>Our History</h2>
-                <p>Text  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora, earum numquam vero, veritatis odit soluta magni deleniti molestias est dolor amet error unde natus, necessitatibus ratione commodi. Maiores, pariatur!</p>
+        <div class="box" id="ContactUs">
+            <div class="box-text" id="Contact">
+                <h2>Contact us!</h2>
+                <p class="contact-bold">Address: </p>
+                <p>Banegårdsgade 2, 8700 Horsens</p><br>
+                <p class="contact-bold">Phone no.: </p>
+                <p>+45 12 34 56 78</p><br>
+                <p class="contact-bold">E-mail: </p>
+                <a href="mailto:BOB@via.dk">BOB@via.dk</a>
             </div>
         </div>  
     </div>
-    <ul class="photo-list">
-        <li class="photo-item">
-            <img src="png/Screenshot_2024-11-02_at_15.02.39-removebg-preview.png" alt="Cat" class="photo">
-            <p class="photo-name">Cats</p>
-        </li>
-        <li class="photo-item">
-            <img src="png/Screenshot_2024-11-02_at_15.08.03-removebg-preview.png" alt="Robent" class="photo">
-            <p class="photo-name">Robents</p>
-        </li>
-        <li class="photo-item">
-            <img src="png/Screenshot_2024-11-02_at_15.03.20-removebg-preview.png" alt="Dog" class="photo">
-            <p class="photo-name">Dogs</p>
-        </li>
-        <li class="photo-item">
-            <img src="png/Screenshot_2024-11-02_at_15.04.36-removebg-preview.png" alt="Birds" class="photo">
-            <p class="photo-name">Birds</p>
-        </li>
-        <li class="photo-item">
-            <img src="png/Screenshot_2024-11-02_at_15.05.38-removebg-preview.png" alt="Fish" class="photo">
-            <p class="photo-name">Fish</p>
-        </li>   
-    </ul>
+
     <div class="content">
-        <div class="box" > 
-            <img class="box-img" src="png/download-removebg-preview.png" alt="Top Image2" width="300" height="300">
+        <div class="box" id="StaffBox"> 
             <div class="box-text">
-                <h2>Our Kennel System</h2>
-                <p>Text  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora, earum numquam vero, veritatis odit soluta magni deleniti molestias est dolor amet error unde natus, necessitatibus ratione commodi. Maiores, pariatur!</p>
+            <h2 id="Staff">Our staff</h2>
+            </div>
+            <div class="row1">
+                <div class="staff">
+                    <img class="box-img-pp" src="png/pp.jpg" alt="pp1" width="300" height="300">
+                    <p class="staff-comment">Bob</p>
+                </div>
+                <div class="staff">
+                    <img class="box-img-pp" src="png/pp.jpg" alt="pp2" width="300" height="300">
+                    <p class="staff-comment">Not Bob</p>
+                </div>
+                <div class="staff">
+                    <img class="box-img-pp" src="png/pp.jpg" alt="pp3" width="300" height="300">
+                    <p class="staff-comment">Also not Bob</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="staff">
+                    <img class="box-img-pp" src="png/pp.jpg" alt="pp4" width="300" height="300">
+                    <p class="staff-comment">This one isn't Bob either</p>
+                </div>
+                <div class="staff">
+                    <img class="box-img-pp" src="png/pp.jpg" alt="pp5" width="300" height="300">
+                    <p class="staff-comment">Fake Bob</p>
+                </div>
             </div>
         </div>  
     </div>
