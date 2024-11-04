@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    background-color: #f5f0ec;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #d9c4af;
+    position: sticky; /*Made the navbar sticky*/
+    top: 0; /*Sticks on top*/
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+}
+.navbar a{
+    color:#f5f0ec ;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover{
+   background-color:#f5f0ec;
+   color: black;
+   border-radius: 25px;
+}
+.img-logo{
+    margin-right: 10%;
+}
+.slider{
+    position: relative;
+    max-width: 100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    animation: slide 12s infinite;
+}
+.slide{
+    min-width: 100%;
+    transition: transform 1s ease;
+}
+.slide img{
+    width: 100%;
+    height: 80%;
+}
+@keyframes slide{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(0);}
+    30%{transform: translateX(-100%);}
+    55%{transform: translateX(-100%);}
+    60%{transform: translateX(-200%);}
+    85%{transform: translateX(-200%);}
+    100%{transform: translateX(0);}
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    margin-top: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    background-color: #d8bfbf;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.box-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.box-text{
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+.box-text h2{
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+#StaffBox .box-text h2 {
+    margin-bottom: 20px; /* Add margin to the heading */
+}
+.box-text p{
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+.photo-list{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: none;
+}
+.photo-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.photo{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+    border: 2px solid #d9c4af;
+}
+.photo-name{
+    margin-top: 8px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+footer{
+    background-color: #d9c4af;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contact-bold{
+    font-weight: bold;
+}
+#GoogleMap{
+    display: flex;
+    align-items: center;
+    background-color: #d8bfbf;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+#ContactUs{
+    width: 600px;
+    height: 410px;
+}
+#StaffBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1320px;
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 300px;
+}
+.staff-comment {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.box-img-pp{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+#Staff{
+    display: flex;
+    
+}
