@@ -80,7 +80,6 @@ body {
     font-weight: bold;
 }
 
-/* Contact section styling */
 .contact-bold {
     font-weight: bold;
 }
@@ -91,7 +90,7 @@ body {
     background-color: #d8bfbf;
     border-radius: 20px;
     padding: 10px;
-    max-width: 800px;
+    max-width:600px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -99,7 +98,7 @@ body {
 }
 
 #ContactUs {
-    max-width: 600px;
+    max-width: 390px;
     height: 450px;
 }
 
@@ -109,10 +108,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-    max-width: 1270px; /* Match the max-width of the container above */
-    margin: 0 auto; /* Center the container */
+    padding: 30px;
+    max-width: 1000px;
+    margin: 20px auto; /* Center the container */
 }
 
 .staff {
@@ -121,8 +119,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    max-width: calc(25% - 20px); /* Ensure four staff members fit within the container with margin */
-    flex: 1 1 calc(25% - 20px); /* Allow flex items to grow and shrink */
+
 }
 
 .staff-name {
