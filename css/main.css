@@ -44,44 +44,48 @@ body {
     .navbar-nav {
         display: none; /* Hide the main menu items */
     }
-
-    /* Make the "More" dropdown visible */
-    .more-link {
+    .navbar-toggler{
         display: block;
-        padding: 14px 20px;
-        font-weight: bold;
-        text-align: center;
-        color: #f5f0ec;
-        background-color: #d9c4af;
-        cursor: pointer;
     }
-
-    /* Style for dropdown content on small screens */
-    .dropdown-content {
-        display: none;
-        flex-direction: column;
-        background-color: #d9c4af;
-        align-items: center;
-        padding-left: 0;
-    }
-
-    .dropdown-content .dropdown-item {
-        padding: 10px;
-        color: #f5f0ec;
-        background-color: #d9c4af;
-        text-align: center;
+    .navbar-collapse{
+        display: block;
         width: 100%;
     }
-
-    .dropdown-content .dropdown-item:hover {
-        background-color: #f5f0ec;
-        color: black;
-        border-radius:30px;
+    .navbar-nav .nav-item{
+        margin: 10px 0;
     }
-
-    /* Show the dropdown content when hovering over the "More" link */
-    .more-link:hover + .dropdown-content {
-        display: flex;
+    .more-link{
+      display: block;
+      padding: 14px 20px;
+      font-weight: bold;        
+      text-align: center;
+      color: #f5f0ec;
+      background-color: #d9c4af;
+      cursor: pointer; 
+    }
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-img{
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+    }
+    .box-text{
+        text-align: center;
+        padding-left: 0;
+    }
+    .photo-item{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .photo{
+        width: 100px;
+        margin-bottom: 100px;
+    }
+    .footer{
+        padding: 20px;
     }
 }
 
@@ -94,88 +98,52 @@ body {
 .navbar-nav .nav-item {
     margin-left: 5px;
 }
-
-/* Style for Dropdown on desktop */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d9c4af;
-    min-width: 160px;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content .dropdown-item {
-    padding: 10px;
-    text-decoration: none;
-    color: #f5f0ec;
-}
-
-.dropdown-content .dropdown-item:hover {
-    background-color: #f5f0ec;
-    color: black;
-}
-.slider {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slides {
+.photo-list{
     display: flex;
-    animation: slide 12s infinite;
+    justify-content: center;
+    padding: 0;
+    margin: auto20px 0;
+    list-style-type: none;
 }
-
-.slide {
-    min-width: 100%;
-    transition: transform 1s ease;
+.photo-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
 }
-
-.slide img {
-    width: 100%;
-    height: 80%;
+.photo-name{
+    margin-top: 8px;
+    font-size: 18px;
+    color:#333;
+    text-align: center;
+    font-weight: bold;
 }
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
+/* Media Queries for Mobile */
+@media (max-width: 576px) {
+    .navbar-nav {
+        display: none;
     }
 
-    25% {
-        transform: translateX(0);
+    .navbar-toggler {
+        display: block;
     }
 
-    30% {
-        transform: translateX(-100%);
+    .navbar-collapse.show {
+        display: block;
     }
 
-    55% {
-        transform: translateX(-100%);
+    .photo-list {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 20px 0;
     }
 
-    60% {
-        transform: translateX(-200%);
-    }
-
-    85% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(0);
+    .photo-item {
+        width: 80%;
+        margin: 0 0 15px 0;
     }
 }
-
 .content {
     display: flex;
     justify-content: center;
