@@ -13,7 +13,7 @@
     margin-bottom: 20px;
 }
 
-.square {
+.button {
     height: 200px;
     width: 100%;
     border: 2px solid black;
@@ -25,15 +25,35 @@
     color: black;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+}
+
+#occupied {
+    background-color: #acb5bc;
+}
+
+#occupied.button::before {
+    display: block;
+    content: "Occupied"
+}
+
+#occupied.button:hover::before {
+    content: "Occupied"
 }
 
 #available {
     background-color: white;
 }
 
-#occupied {
-    background-color: #acb5bc;
+#available.button::before {
+    display: block;
+    content: "Available"
 }
+
+#available.button:hover::before {
+    content: "Contact us to make a booking"
+}
+
 .kennel-grid {
     display: grid;
     gap: 20px;
