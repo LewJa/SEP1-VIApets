@@ -95,11 +95,12 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    width: fit-content
 }
 
 #ContactUs {
-    width: 600px;
-    height: 410px;
+    max-width: 600px;
+    height: 450px;
 }
 
 /* Staff section styling */
@@ -110,7 +111,8 @@ body {
     align-items: center;
     padding: 20px;
     margin-top: 20px;
-    max-width: 1320px;
+    max-width: 1270px; /* Match the max-width of the container above */
+    margin: 0 auto; /* Center the container */
 }
 
 .staff {
@@ -119,9 +121,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    max-width: 300px;
-    flex: 1 1 300px;
-    /* Allow flex items to grow and shrink */
+    max-width: calc(25% - 20px); /* Ensure four staff members fit within the container with margin */
+    flex: 1 1 calc(25% - 20px); /* Allow flex items to grow and shrink */
 }
 
 .staff-name {
@@ -138,10 +139,10 @@ body {
     color: black;
 }
 
-.row1,
-.row2 {
+.row1, .row2 {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap; /* Ensure each row displays in a single row */
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
 }
@@ -152,8 +153,8 @@ body {
 }
 
 .box-img-pp {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -185,4 +186,83 @@ body {
 
 .button a:hover {
     color: #8f8282;
+}
+
+@media (min-width: 768px) {
+    .contact-map-container {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    #ContactUs {
+        flex: 1;
+        margin: 10px;
+        order: 2;
+    }
+
+    #GoogleMap {
+        flex: 1;
+        margin: 10px;
+        order: 1;
+    }
+
+    .staff {
+        max-width: calc(25% - 20px); /* Ensure four staff members fit within the container with margin */
+        flex: 1 1 calc(25% - 20px); /* Allow flex items to grow and shrink */
+    }
+
+    .row1, .row2 {
+        display: flex;
+        flex-wrap: nowrap; /* Ensure each row displays in a single row */
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box-img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .box-text {
+        text-align: center;
+        padding: 0;
+    }
+
+    #GoogleMap {
+        width: 100%;
+        height: auto;
+        order: 2; /* Move map below contact information */
+    }
+
+    #ContactUs {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        order: 1; /* Move contact information above map */
+    }
+
+    .staff {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .staff-name, .staff-comment {
+        text-align: center;
+    }
+
+    .row1, .row2 {
+        flex-direction: column;
+        padding: 10px;
+    }
 }
