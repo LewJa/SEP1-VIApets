@@ -1,7 +1,6 @@
 .box {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -65,5 +64,8 @@
 @media (max-width: 768px) {
     .kennel-grid {
         grid-template-columns: 150px 150px;
+    }
+    .button {
+        height: 150px;
     }
 }
