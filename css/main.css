@@ -21,7 +21,7 @@ body {
     color: #f5f0ec;
     display: inline-block;
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,6 +35,7 @@ body {
 .img-logo {
     margin-right: 10%;
 }
+
 .logo{
     width: 292px;
     height: 80px;
