@@ -14,7 +14,7 @@ body {
     /*Sticks on top*/
     width: 100%;
     z-index: 10;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .navbar a {
@@ -29,7 +29,7 @@ body {
 .navbar a:hover {
     background-color: #f5f0ec;
     color: black;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .img-logo {
@@ -38,6 +38,90 @@ body {
 .logo{
     width: 292px;
     height: 80px;
+}
+@media (max-width: 991px) {
+    .navbar-nav {
+        display: none; /* Hide the main menu items */
+    }
+
+    /* Make the "More" dropdown visible */
+    .more-link {
+        display: block;
+        padding: 14px 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #f5f0ec;
+        background-color: #d9c4af;
+        cursor: pointer;
+    }
+
+    /* Style for dropdown content on small screens */
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        background-color: #d9c4af;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .dropdown-content .dropdown-item {
+        padding: 10px;
+        color: #f5f0ec;
+        background-color: #d9c4af;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content .dropdown-item:hover {
+        background-color: #f5f0ec;
+        color: black;
+        border-radius:30px;
+    }
+
+    /* Show the dropdown content when hovering over the "More" link */
+    .more-link:hover + .dropdown-content {
+        display: flex;
+    }
+}
+
+/* Navbar links horizontal on large screens */
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 5px;
+}
+
+/* Style for Dropdown on desktop */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d9c4af;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #f5f0ec;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: #f5f0ec;
+    color: black;
 }
 .slider {
     position: relative;
