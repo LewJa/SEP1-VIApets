@@ -98,6 +98,7 @@ body {
 .navbar-nav {
     display: flex;
     list-style-type: none;
+    margin-top: 25px;
 }
 
 .navbar-nav .nav-item {
