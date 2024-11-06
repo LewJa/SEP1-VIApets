@@ -105,10 +105,9 @@
     }
     .contact-map-container {
         display: flex;
-        justify-content: start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: flex-end;
     }
-
     #ContactUs {
         flex: 1;
         margin: 10px;
@@ -160,12 +159,12 @@
     }
 
     #ContactUs {
-        width: 100%;
+        width: 93%;
         height: auto;
         padding: 20px;
         order: 1; /* Move contact information above map */
     }
-
+ 
     .staff {
         max-width: 100%;
         margin: 10px 0;
