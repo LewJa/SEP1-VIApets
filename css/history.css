@@ -1,0 +1,25 @@
+.timeline-container{
+    padding: 20px;
+}
+.timeline-card{
+    margin-bottom: 20px;
+}
+.year-label{
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+    .timeline-card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 768px){
+    .timeline-card{
+         flex: 0 0 100%;
+         max-width: 100%;
+    }
+}
