@@ -48,7 +48,7 @@
     margin-bottom: 20px;
 }
 
-#occupied.button, #available.button {
+.occupied, .available {
     height: 200px;
     width: 100%;
     border: 2px solid black;
@@ -63,29 +63,29 @@
     cursor: pointer;
 }
 
-#occupied {
+.occupied {
     background-color: #acb5bc;
 }
 
-#occupied.button::before {
+.occupied::before {
     display: block;
     content: "Occupied"
 }
 
-#occupied.button:hover::before {
+.occupied:hover::before {
     content: "Occupied"
 }
 
-#available {
+.available {
     background-color: white;
 }
 
-#available.button::before {
+.available::before {
     display: block;
     content: "Available"
 }
 
-#available.button:hover::before {
+.available:hover::before {
     content: "Contact us to make a booking"
 }
 
@@ -101,7 +101,7 @@
     .kennel-grid {
         grid-template-columns: 150px 150px;
     }
-    #occupied.button, #available.button {
+    .occupied, .available {
         height: 150px;
     }
 }
