@@ -1,3 +1,53 @@
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #d8bfbf;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.box-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.box-text {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.box-text h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.box-text p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.headings {
+    margin-bottom: 20px;
+}
+
 #occupied.button, #available.button {
     height: 200px;
     width: 100%;
