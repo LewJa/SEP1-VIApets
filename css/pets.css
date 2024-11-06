@@ -15,7 +15,10 @@ a {
 button {
     margin: 5px;
 }
-
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 .row {
     display: flex;
     padding-left: 43px;
@@ -42,7 +45,7 @@ h2 {
 .card:hover {
     transform: scale(1.08);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 9;
+    z-index: 8;
 }
 
 .card .more-info {
