@@ -40,6 +40,7 @@ body {
     width: 292px;
     height: 80px;
 }
+
 @media (max-width: 991px) {
     .navbar-nav {
         display: none; /* Hide the main menu items */
@@ -92,6 +93,7 @@ body {
         flex: 0 0 30%;
     }
 }
+
 /* Navbar links horizontal on large screens */
 .navbar-nav {
     display: flex;
@@ -101,6 +103,7 @@ body {
 .navbar-nav .nav-item {
     margin-left: 5px;
 }
+
 .photo-list{
     display: flex;
     flex-wrap: wrap;
@@ -122,20 +125,9 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
 /* Media Queries for Mobile */
 @media (max-width: 576px) {
-    .navbar-nav {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .navbar-collapse.show {
-        display: block;
-    }
-
     .photo-list {
         flex-direction: column;
         justify-content: center;
