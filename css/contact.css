@@ -99,7 +99,7 @@
     color: #8f8282;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .container{
         max-width: 1000px;
     }
@@ -135,7 +135,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .box {
         flex-direction: column;
         text-align: center;
@@ -154,7 +154,7 @@
     }
 
     #GoogleMap {
-        width: 100%;
+        width: 94%;
         height: auto;
         order: 2; /* Move map below contact information */
     }
