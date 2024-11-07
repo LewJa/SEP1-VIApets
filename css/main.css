@@ -40,6 +40,9 @@ body {
     width: 292px;
     height: 80px;
 }
+.circle:hover{
+    transform: scale(1.09);
+}
 
 @media (max-width: 991px) {
     .navbar-nav {
