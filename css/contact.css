@@ -96,7 +96,7 @@
 }
 
 .button a:hover {
-    color: #8f8282;
+    transform: scale(1.1);
 }
 
 @media (min-width: 576px) {
