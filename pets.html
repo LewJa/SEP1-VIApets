@@ -10,6 +10,8 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/pets.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="png/b739e60b529661eaedb397060c5191ed-removebg-preview.png" type="image/x-icon" /> 
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             </button>
             <div class="collapse navbar-collapse" id="myNavBar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="homePage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="pets.html">Pets</a></li>
                     <li class="nav-item"><a class="nav-link" href="kennel.html">Kennel</a></li>
                     <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
@@ -34,16 +36,17 @@
 
     <!-- Menu for choosing type of animal -->
     <div class="menu">
-        <button type="button" class="btn btn-secondary"><a href="#2">Cats</a></button>
-        <button type="button" class="btn btn-secondary"><a href="#1">Dogs</a></button>
-        <button type="button" class="btn btn-secondary"><a href="#3">Birds</a></button>
-        <button type="button" class="btn btn-secondary"><a href="#4">Fish</a></button>
-        <button type="button" class="btn btn-secondary"><a href="#5">Rodents</a></button>
+        <button type="button" class="btn btn-secondary" data-filter="All">All</button>
+        <button type="button" class="btn btn-secondary" data-filter="Cats">Cats</button>
+        <button type="button" class="btn btn-secondary" data-filter="Dogs">Dogs</button>
+        <button type="button" class="btn btn-secondary" data-filter="Birds">Birds</button>
+        <button type="button" class="btn btn-secondary" data-filter="Fish">Fish</button>
+        <button type="button" class="btn btn-secondary" data-filter="Rodents">Rodents</button>
     </div>
-
-    <!-- Cards for cats -->
-    <h2 id="2">Cats</h2>
-    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2">
+   
+<!-- Cards for cats -->
+    <h2 data-box="Cats">Cats</h2>
+    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2" data-box="Cats">
         <div class="col">
             <div class="card">
                 <img src="CatPhotos/9054c9d1c125fe8d48b457694d325003.jpg" class="card-img-top" alt="...">
@@ -51,8 +54,9 @@
                     <h5 class="card-title">Whiskers</h5>
                     <p class="card-text"> Gender: male <br> Age: 2-3 years</p>
                     <div class="more-info">
-                        <p> A fluffy orange tabby cat enjoying the sunshine.</p>
+                        <p> A curious cat exploring her surroundings.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -65,6 +69,7 @@
                     <div class="more-info">
                         <p> A curious cat exploring her surroundings.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -77,6 +82,7 @@
                     <div class="more-info">
                         <p> A curious calico cat exploring her surroundings.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -89,6 +95,7 @@
                     <div class="more-info">
                         <p>A sleek black cat who loves to hide in dark corners.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -101,6 +108,7 @@
                     <div class="more-info">
                         <p>Playful kitten ready to be loved.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -113,15 +121,16 @@
                     <div class="more-info">
                         <p>A playful tuxedo cat.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Cards with dogs -->
-    <h2 id="1">Dogs</h2>
-    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2">
-        <div class="col">
+<!-- Cards with dogs -->
+    <h2 id="1" data-box="Dogs">Dogs</h2>
+    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2"  data-box="Dogs">
+        <div class="col" >
             <div class="card">
                 <img src="DogPhotos/dog11.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -130,10 +139,11 @@
                     <div class="more-info">
                         <p>A friendly dog always eager for a game of fetch.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="DogPhotos/dog12.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -142,6 +152,7 @@
                     <div class="more-info">
                         <p>Needs a lot of attencion.Loves to talk a looot!</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -154,10 +165,11 @@
                     <div class="more-info">
                         <p>A friendly but shy dog </p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="DogPhotos/dog14.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -166,10 +178,11 @@
                     <div class="more-info">
                         <p>A cheerful dog with a shiny coat and friendly eyes.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="DogPhotos/dog15.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -178,10 +191,11 @@
                     <div class="more-info">
                         <p>A cheerful dog with a shiny coat and friendly eyes.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="DogPhotos/dog3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -190,6 +204,7 @@
                     <div class="more-info">
                         <p>Very energic dog,loves food</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -202,15 +217,15 @@
                     <div class="more-info">
                         <p>He is just a baby!</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Cards with birds -->
-    <h2 id="3">Birds</h2>
-    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2">
-        <div class="col">
+<!-- Cards with birds -->
+    <h2 id="3" data-box="Birds">Birds</h2>
+    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2" data-box="Birds">
+        <div class="col" >
             <div class="card">
                 <img src="BirdPhotos/0cdeba0ca8b850ba72695b2ee992848c.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -219,6 +234,7 @@
                     <div class="more-info">
                         <p>A bright yellow parakeet, full of energy and ready to explore.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -231,6 +247,7 @@
                     <div class="more-info">
                         <p> A soft gray parakeet with a gentle and calm demeanor.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -243,6 +260,7 @@
                     <div class="more-info">
                         <p>A delicate pink parakeet with a sweet and playful personality!</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -255,15 +273,15 @@
                     <div class="more-info">
                         <p>A vibrant orange and yellow parrot with loud and cheerful chirps.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Cards with fish -->
-    <h2 id="4">Fish</h2>
-    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2">
-        <div class="col">
+<!-- Cards with fish -->
+    <h2 id="4" data-box="Fish">Fish</h2>
+    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2" data-box="Fish">
+        <div class="col" >
             <div class="card">
                 <img src="FishPhotos/c84759dac45173b636d0c51d14d04f88.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -272,10 +290,11 @@
                     <div class="more-info">
                         <p>Vibrant colored fish who like to live in a group</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="FishPhotos/75f8834dba620f830c1f3f36bb7df7c2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -284,10 +303,11 @@
                     <div class="more-info">
                         <p>A beautiful goldfish,easy to take care of.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="FishPhotos/6c016aca9ead794b0581360ba82af920.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -296,15 +316,16 @@
                     <div class="more-info">
                         <p>An eye-taking betta fish,aggresive with other fish.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
     </div>
     
     <!-- Cards with Rodents -->
-    <h2 id="5">Rodents</h2>
-    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2">
-        <div class="col">
+    <h2 id="5" data-box="Rodents">Rodents</h2>
+    <div class="row row-cols-1 row-cols-md-3  row-cols-lg-4  row-cols-xl-5 row-cols-sm-2" data-box="Rodents">
+        <div class="col" >
             <div class="card">
                 <img src="RodentPhotos/45165fe93699ac132e63daa3063a1b08.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -313,6 +334,7 @@
                     <div class="more-info">
                         <p> A small and fluffy hamster with a curious and playful nature.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
@@ -325,10 +347,11 @@
                     <div class="more-info">
                         <p>A sweet and cuddly hamster with a soft golden coat</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" >
             <div class="card">
                 <img src="RodentPhotos/e2ba1a1eeabd9e7f92e831095c18b2b5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -337,11 +360,12 @@
                     <div class="more-info">
                         <p> A white hamster with bright red eyes, gentle and calm.</p>
                     </div>
+                    <button type="button" class="btn1">More Info</button>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Footer -->
     <footer class="text-center text-lg-start">
         <!-- Grid container -->
@@ -371,6 +395,8 @@
             <a class="text-body" href="homePage.html">VIApets.dk</a>
         </div>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
