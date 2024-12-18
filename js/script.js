@@ -26,7 +26,8 @@ $(document).ready(function() {
         Object.keys(petsByType).forEach(type => {
             const container = $(`[data-box="${type.charAt(0).toUpperCase() + type.slice(1)}s"]`);
             const pets = petsByType[type];
-           
+             
+    
             pets.forEach(pet => {
                 const card = createPetCard(pet);
                 container.append(card);
