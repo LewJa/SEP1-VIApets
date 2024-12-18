@@ -24,13 +24,17 @@ $(document).ready(function() {
 
         // Generate cards for each type
         Object.keys(petsByType).forEach(type => {
-            const container = $(`[data-box="${type.charAt(0).toUpperCase() + type.slice(1)}s"]`);
+            // Special handling for 'fish' and 'various' which don't need pluralization
+            const displayType = type === 'fish' || type === 'various' ? 
+            type.charAt(0).toUpperCase() + type.slice(1) :
+            type.charAt(0).toUpperCase() + type.slice(1) + 's';
+            
+            const container = $(`[data-box="${displayType}"]`);
             const pets = petsByType[type];
              
-    
             pets.forEach(pet => {
-                const card = createPetCard(pet);
-                container.append(card);
+            const card = createPetCard(pet);
+            container.append(card);
             });
          });
 
