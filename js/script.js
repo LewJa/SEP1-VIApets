@@ -12,9 +12,7 @@ $(document).ready(function() {
                 type: $(this).attr("type"),
                 name: $(this).find("name").text(),
                 age: $(this).find("age").text(),
-                gender: $(this).find("gender").text() === 'f' ? 'Female' : 
-                $(this).find("gender").text() === 'm' ? 'Male' : 
-                $(this).find("gender").text(),
+                gender: $(this).find("gender").text() ==='F' ? "Female" : "Male",
                 comment: $(this).find("comment").text(),
                 breed: $(this).find("breed").text(),
                 price: $(this).find("price").text()
@@ -193,3 +191,4 @@ $(document).ready(function() {
             }
         });
     }
+    

@@ -135,6 +135,9 @@
 }
 
 @media (max-width: 1000px) { 
+    .box-img-pp{
+        width: 170px;
+    }
     .box {
         flex-direction: column;
         text-align: center;
