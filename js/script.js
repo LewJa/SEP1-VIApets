@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("[data-box]").empty();
+    
     // Load and parse XML data
     $.get("xml/pets.xml", function(xml) {
         let petsByType = {
@@ -35,6 +35,7 @@ $(document).ready(function() {
 
         // Attach event handlers after dynamically creating cards
         attachMoreInfoHandlers();
+
     });
 
     // Card template function
@@ -59,26 +60,120 @@ $(document).ready(function() {
     function getPetImage(pet) {
         const safeName = pet.name.toLowerCase();
         return `${pet.type}Photos/${safeName}.jpg`;
+        
     }
 
     // Filter buttons event handlers
-    $("[data-filter]").on('click', function(e){
-        const filterType = $(this).data('filter');
+    $("[data-filter='All']").on('click', function(e){
+        $("[data-box='Dogs']").show();
+        $("[data-menu='Dogs']").show();
+        $("[data-box='Fish']").show();
+        $("[data-menu='Fish']").show();
+        $("[data-box='Birds']").show();
+        $("[data-menu='Birds']").show();
+        $("[data-box='Rodents']").show();
+        $("[data-menu='Rodents']").show();
+        $("[data-box='Various']").show(); 
+        $("[data-menu='Various']").show();
+        $("[data-box='Cats']").show();
+        $("[data-menu='Cats']").show();
         
-        // Hide all boxes
-        $("[data-box]").hide();
-        
-        // Show all or specific box based on filter
-        if (filterType === 'All') {
-            $("[data-box]").show();
-        } else {
-            $(`[data-box='${filterType}s']`).show();
-        }
     });
+    $("[data-filter='Cats']").on('click', function(e){
+        $("[data-box='Dogs']").hide();
+        $("[data-menu='Dogs']").hide();
+        $("[data-box='Fish']").hide();
+        $("[data-menu='Fish']").hide();
+        $("[data-box='Birds']").hide();
+        $("[data-menu='Birds']").hide();
+        $("[data-box='Rodents']").hide();
+        $("[data-menu='Rodents']").hide();
+        $("[data-box='Various']").hide(); 
+        $("[data-menu='Various']").hide();
+        $("[data-box='Cats']").show();
+        $("[data-menu='Cats']").show();
+    
+    });
+    $("[data-filter='Dogs']").on('click', function(e){
+        $("[data-box='Cats']").hide();
+        $("[data-menu='Cats']").hide();
+        $("[data-box='Fish']").hide();
+        $("[data-menu='Fish']").hide();
+        $("[data-box='Birds']").hide();
+        $("[data-menu='Birds']").hide();
+        $("[data-box='Rodents']").hide();
+        $("[data-menu='Rodents']").hide();
+        $("[data-box='Various']").hide(); 
+        $("[data-menu='Various']").hide();
+        $("[data-box='Dogs']").show();
+        $("[data-menu='Dogs']").show();
+    
+    });
+    $("[data-filter='Birds']").on('click', function(e){
+        $("[data-box='Dogs']").hide();
+        $("[data-menu='Dogs']").hide();
+        $("[data-box='Fish']").hide();
+        $("[data-menu='Fish']").hide();
+        $("[data-box='Cats']").hide();
+        $("[data-menu='Cats']").hide();
+        $("[data-box='Rodents']").hide();
+        $("[data-menu='Rodents']").hide();
+        $("[data-box='Various']").hide(); 
+        $("[data-menu='Various']").hide();
+        $("[data-box='Birds']").show();
+        $("[data-menu='Birds']").show();
+    
+    });
+    $("[data-filter='Rodents']").on('click', function(e){
+        $("[data-box='Dogs']").hide();
+        $("[data-menu='Dogs']").hide();
+        $("[data-box='Fish']").hide();
+        $("[data-menu='Fish']").hide();
+        $("[data-box='Birds']").hide();
+        $("[data-menu='Birds']").hide();
+        $("[data-box='Cats']").hide();
+        $("[data-menu='Cats']").hide();
+        $("[data-box='Various']").hide(); 
+        $("[data-menu='Various']").hide();
+        $("[data-box='Rodents']").show();
+        $("[data-menu='Rodents']").show();
+    
+    });
+    $("[data-filter='Fish']").on('click', function(e){
+        $("[data-box='Dogs']").hide();
+        $("[data-menu='Dogs']").hide();
+        $("[data-box='Cats']").hide();
+        $("[data-menu='Cats']").hide();
+        $("[data-box='Birds']").hide();
+        $("[data-menu='Birds']").hide();
+        $("[data-box='Rodents']").hide();
+        $("[data-menu='Rodents']").hide();
+        $("[data-box='Various']").hide(); 
+        $("[data-menu='Various']").hide();
+        $("[data-box='Fish']").show();
+        $("[data-menu='Fish']").show();
+    
+    });
+    $("[data-filter='Various']").on('click', function(e){
+        $("[data-box='Dogs']").hide();
+        $("[data-menu='Dogs']").hide();
+        $("[data-box='Fish']").hide();
+        $("[data-menu='Fish']").hide();
+        $("[data-box='Birds']").hide();
+        $("[data-menu='Birds']").hide();
+        $("[data-box='Rodents']").hide();
+        $("[data-menu='Rodents']").hide();
+        $("[data-box='Cats']").hide(); 
+        $("[data-menu='Cats']").hide();
+        $("[data-box='Various']").show();
+        $("[data-menu='Various']").show();
+    
+    });
+});
 
     // More Info button handler function
     function attachMoreInfoHandlers() {
-        $(".btn1").on('click', function(e){
+        $(".btn1").on('click', function(){
             const $moreInfo = $(this).siblings(".more-info");
             const $infoButton = $(this);
             
@@ -93,42 +188,3 @@ $(document).ready(function() {
             }
         });
     }
-});
-    //    $.get("xml/pets.xml", function(xml){
-    //             var txt='';
-    //             $(xml).find("pet").each(function(){
-    //                     txt += ' <div class="col" >'
-    //                         txt += '<div class="card">'
-    //                             txt += '<img src="DogPhotos/dog11.jpg" class="card-img-top" alt="...">'
-    //                                 txt += '<div class="card-body">'
-    //                                 txt += '<h5 id="name">Benji</h5>'
-    //                                 txt += '<p id="gender">Gender: male </p>'
-    //                                 txt += '<p id="age">Age: 2-3 years</p>'
-    //                                 txt += '<p id="breed">Breed</p>'
-    //                                     txt += '<div class="more-info">'
-    //                                         txt += '<p id="price"></p>'
-    //                                         txt += '<p id="comment">A friendly dog always eager for a game of fetch.</p>'
-    //                                     txt += '<button type="button" class="btn1">More Info</button>'
-    //                                     txt += '</div>'
-    //                              txt += '</div>'
-    //                         txt += '</div>'
-    //                     txt += '</div>'
-
-
-    //                 $(xml).find("pet").each(function(){   
-    //                     var name = $(this).find("name").text();
-    //                     $("#name").html(name);
-    //                     var age = $(this).find("age").text();
-    //                     $("#age").html(age);
-    //                     var gender = $(this).find("gender").text();
-    //                     $("#gender").html(gender);
-    //                     var breed = $(this).find("breed").text();
-    //                     $("#breed").html(breed);
-    //                     var price = $(this).find("price").text();
-    //                     $("#price").html(price);
-    //                     var comment = $(this).find("comment").text();
-    //                     $("#comment").html(comment);
-    //                 });
-    //             });
-    //             $(".content").html(txt);
-    //         });
